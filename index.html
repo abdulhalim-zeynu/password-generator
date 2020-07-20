@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Custom style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <h2 id="passwordDisplay">Password</h2>
+        <form id="passwordGenratorForm" class="form">
+            <div>
+                <label for="characters">Number of Characters</label>
+                <input type="range" id="characterAmountRange" min="5" max="60" value="10">
+                <input type="number" id="characterAmountNumber" min="5" max="60" value="10">
+            </div>
+            <div>
+                <label for="">Include UperCase</label>
+                <input type="checkbox" id="includeUpperCase">
+            </div>
+            <div>
+                <label for="">Include Numbers</label>
+                <input type="checkbox" id="includeNumber">
+            </div>
+            <div>           
+                <label for="">Include Symbols</label>
+                <input type="checkbox" id="includeSymbol">
+            </div>
+                <input type="submit" value="Generate Password">
+            
+        </form>
+    </div>
+
+    <!-- All js links -->
+<script src="calculator.js"></script>
+</body>
+</html>
